@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <title>Лабораторная работа №8</title>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Задание №1</h1>
+  <img id="mainPhoto" src="images/1.jpeg">
+  <div class="container">
+    <img src="images/1.jpeg" id="first">
+    <img src="images/2.png" id="second">
+    <img src="images/3.png" id="third">
+    <img src="images/4.png" id="fourth">
+  </div>
+
+  <h1>Задание №2</h1>
+  <p>Кликни на элемент списка, чтобы выделить его.</p>
+  <ul id="list">
+    <li>Кристофер Робин</li>
+    <li>Винни Пух</li>
+    <li>Тигра</li>
+    <li>Кенга</li>
+    <li>Кролик. Просто Кролик.</li>
+  </ul>
+
+  <h1>Задание №3</h1>
+  <p>Зажмите клавиши q и w</p>
+
+  <h1>Задание №4</h1>
+  <div>
+    <p>Депозитный калькулятор</p>
+    <form id="mainform">
+      <label for="deposit">Первоначальный депозит</label>
+      <input type="number" name="deposit" id="deposit"><br>
+      <label for="srok">Срок вклада?</label>
+      <select name="srok" id="srok">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select><br>
+      <label for="proc">Годовая процентная ставка?</label>
+      <input type="number" name="proc" id="proc" min="1" max="100" /><br>
+      <input type="submit" value="Посчитать" />
+    </form>
+    <h2>Было:</h2>
+    <p id="prev"></p>
+    <h2>Стало:</h2>
+    <p id="result"></p>
+  </div>
+</body>
+</html>

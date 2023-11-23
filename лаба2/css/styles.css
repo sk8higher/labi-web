@@ -1,0 +1,78 @@
+#mainmenu {
+  float: left;
+}
+#mainmenu ul {
+  margin: 10; /* отступ ленты меню
+   сверху*/
+  padding: 5; /* отступ ленты меню
+   слева*/
+  list-style: none;
+}
+
+#mainmenu ul li {
+  position: relative;
+  float: left;
+}
+
+#mainmenu ul li ul,
+#mainmenu ul li ul li {
+  width: 130px;
+  color: red; /* */
+}
+
+#mainmenu li ul {
+  position: absolute;
+  left: 0;
+  top: 29px;
+  display: none;
+  float: left;
+}
+
+#mainmenu ul li a {
+  float: left;
+  color: #FFD770; /*Цвет текста глав меню */
+  width: 80px; /*Длина ленты глав меню */
+  font-size: 16px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  background: grey; /*цвет фона гл
+   меню*/
+}
+
+#mainmenu li ul li a {
+  padding: 5px 0 3px 10px;
+  text-align: left;
+  font-size: 12px;
+  width: 80px;
+  background: blue; /*Цвет поля
+   группы выбр-го пoдменю*/
+  color: red;
+}
+
+#mainmenu li ul li a:hover {
+  background: olive; /*Цвет фона
+   подменю */
+  color: aqua;
+}
+
+#settings a {
+  /*Графич-й эл-т */
+  padding: 18px;
+  height: 19px; /*Высота графич элта */
+  font-size: 10px;
+  line-height: 24px;
+}
+
+* html #mainmenu ul li {
+  float: left;
+  height: 1%;
+}
+
+* html #mainmenu ul li a {
+  height: 1%;
+}
+
+#mainmenu li:hover ul,
+#mainmenu li.hover ul {
+  display: block;
+}
